@@ -30,7 +30,7 @@ $ git clone git@github.com:jppcarvalho94/42-so_long.git
 ### Step 2 / Install Minilibx dependencies:
 
 ```bash
-$ sudo apt install libbsd-dev libxext-dev
+$ sudo apt-get update && sudo apt-get install xorg libxext-dev zlib1g-dev libbsd-dev
 ```
 
 ### Step 3 / Compile the program:  
