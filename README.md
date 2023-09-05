@@ -27,16 +27,21 @@ This project is a very small 2D game. Its purpose is to make you work with textu
 $ git clone git@github.com:jppcarvalho94/42-so_long.git
 ```
 
-### Step 2 / Install Minilibx dependencies:
-
+### Step 2 / Install Minilibx and it's dependencies:
+Minilibx download:
+```bash
+$ cd 42-so_long/
+$ make download
+```
+Minilibx dependencies:
 ```bash
 $ sudo apt-get update && sudo apt-get install xorg libxext-dev zlib1g-dev libbsd-dev
 ```
 
+
 ### Step 3 / Compile the program:  
 
 ```bash
-$ cd 42-so_long/
 $ make
 $ make bonus
 ```
