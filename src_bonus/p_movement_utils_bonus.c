@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:50:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/05 15:12:30 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/05 16:54:25 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,6 @@ void	validate_move_up(t_game *game)
 		game->moves++;
 		ft_printf("Moves: %d\n", game->moves);
 		render_moves(game);
-
 	}
 }
 
