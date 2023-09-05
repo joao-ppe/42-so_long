@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:27:55 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/22 17:36:19 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/05 13:36:11 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ void	move_up_lvl2(t_game *game)
 		game->player.x * SIZE, n_pos * SIZE + ((SIZE / 3) * 2));
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/m_up_lvl2.xpm", game->player.x * SIZE, n_pos * SIZE
 		+ ((SIZE / 3)));
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/p_lvl2.xpm", game->player.x * SIZE, n_pos * SIZE);
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
@@ -50,12 +50,12 @@ void	move_down_lvl2(t_game *game)
 		game->player.x * SIZE, n_pos * SIZE - ((SIZE / 3) * 2));
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/m_down_lvl2.xpm", game->player.x * SIZE, 
 		n_pos * SIZE - ((SIZE / 3)));
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/p_lvl2.xpm", game->player.x * SIZE, n_pos * SIZE);
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, p_pos
 		* SIZE);
@@ -74,11 +74,11 @@ void	move_left_lvl2(t_game *game)
 	put_tile(game, "./assets/m_left_lvl2.xpm", n_pos * SIZE + ((SIZE / 3) * 2),
 		game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/m_left_lvl2.xpm", n_pos * SIZE + ((SIZE / 3)),
 		game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/p_lvl2.xpm", n_pos * SIZE, game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
 	game->player.x = n_pos;
@@ -96,11 +96,11 @@ void	move_right_lvl2(t_game *game)
 	put_tile(game, "./assets/m_right_lvl2.xpm", n_pos * SIZE - ((SIZE / 3) * 2),
 		game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/m_right_lvl2.xpm", n_pos * SIZE - ((SIZE / 3)),
 		game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
-	usleep(70000);
+	usleep(50000);
 	put_tile(game, "./assets/p_lvl2.xpm", n_pos * SIZE, game->player.y * SIZE);
 	put_tile(game, "./assets/floor.xpm", p_pos * SIZE, game->player.y * SIZE);
 	game->player.x = n_pos;

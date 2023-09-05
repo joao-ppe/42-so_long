@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/20 17:13:01 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/22 17:30:20 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/05 13:34:44 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,11 @@ int	move_enemy_up(t_game *game, int i)
 		put_tile(game, "./assets/e_move_up.xpm", 
 			pos.x * SIZE, n_pos * SIZE + ((SIZE / 3) * 2));
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/e_move_up.xpm", pos.x * SIZE, 
 			n_pos * SIZE + ((SIZE / 3)));
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/enemy.xpm", pos.x * SIZE, n_pos * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
 		game->enemies[i].y = n_pos;
@@ -77,11 +77,11 @@ int	move_enemy_down(t_game *game, int i)
 		put_tile(game, "./assets/e_move_down.xpm", 
 			pos.x * SIZE, n_pos * SIZE - ((SIZE / 3) * 2));
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/e_move_down.xpm", pos.x * SIZE, 
 			n_pos * SIZE - ((SIZE / 3)));
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/enemy.xpm", pos.x * SIZE, n_pos * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
 		game->enemies[i].y = n_pos;
@@ -106,11 +106,11 @@ int	move_enemy_left(t_game *game, int i)
 		put_tile(game, "./assets/e_move_left.xpm", 
 			n_pos * SIZE + ((SIZE / 3) * 2), pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/e_move_left.xpm",
 			n_pos * SIZE + ((SIZE / 3)), pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/enemy.xpm", n_pos * SIZE, pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
 		game->enemies[i].x = n_pos;
@@ -135,11 +135,11 @@ int	move_enemy_right(t_game *game, int i)
 		put_tile(game, "./assets/e_move_right.xpm", 
 			n_pos * SIZE - ((SIZE / 3) * 2), pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/e_move_right.xpm", 
 			n_pos * SIZE - ((SIZE / 3)), pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
-		usleep(70000);
+		usleep(30000);
 		put_tile(game, "./assets/enemy.xpm", n_pos * SIZE, pos.y * SIZE);
 		put_tile(game, "./assets/floor.xpm", pos.x * SIZE, pos.y * SIZE);
 		game->enemies[i].x = n_pos;

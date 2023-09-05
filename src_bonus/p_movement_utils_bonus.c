@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:50:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/22 18:32:56 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/05 15:12:30 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,27 @@ int	handle_keypress(int keysym, t_game *game)
 	if (keysym == XK_Escape)
 		ft_quit(game);
 	else if (keysym == XK_w || keysym == XK_Up)
+	{
 		validate_move_up(game);
+		move_enemy(game);
+	}
 	else if (keysym == XK_s || keysym == XK_Down)
+	{
 		validate_move_down(game);
+		move_enemy(game);
+	}
 	else if (keysym == XK_a || keysym == XK_Left)
+	{
 		validate_move_left(game);
+		move_enemy(game);
+	}
 	else if (keysym == XK_d || keysym == XK_Right)
+	{
 		validate_move_right(game);
-	game->moves++;
-	ft_printf("Moves: %d\n", game->moves);
-	render_moves(game);
+		move_enemy(game);
+	}
 	check_win(game);
 	check_loss(game, -1);
-	move_enemy(game);
 	return (0);
 }
 
@@ -48,6 +56,10 @@ void	validate_move_up(t_game *game)
 			move_up_lvl1(game);
 		else
 			move_up_lvl2(game);
+		game->moves++;
+		ft_printf("Moves: %d\n", game->moves);
+		render_moves(game);
+
 	}
 }
 
@@ -66,6 +78,9 @@ void	validate_move_down(t_game *game)
 			move_down_lvl1(game);
 		else
 			move_down_lvl2(game);
+		game->moves++;
+		ft_printf("Moves: %d\n", game->moves);
+		render_moves(game);
 	}
 }
 
@@ -84,6 +99,9 @@ void	validate_move_left(t_game *game)
 			move_left_lvl1(game);
 		else
 			move_left_lvl2(game);
+		game->moves++;
+		ft_printf("Moves: %d\n", game->moves);
+		render_moves(game);
 	}
 }
 
@@ -102,5 +120,8 @@ void	validate_move_right(t_game *game)
 			move_right_lvl1(game);
 		else
 			move_right_lvl2(game);
+		game->moves++;
+		ft_printf("Moves: %d\n", game->moves);
+		render_moves(game);
 	}
 }
