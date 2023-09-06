@@ -99,7 +99,7 @@ $ ./so_long_bonus maps/map1.ber
 To exit the game, just press 'ESC' on your keyboard or click the 'X' in the game window. **HAVE FUN!**
 
 ## Disclaimer:
-This project's source code adheres to the standards of 42 School and its norms rigorous coding practices:
+This project's source code adheres to the standards of 42 School and its norms and rigorous coding practices:
 ```
 - We refrain from using 'for,' 'do while,' 'switch,' 'case,' or 'goto' constructs.
 - Each function has no more than 25 lines of code. 
