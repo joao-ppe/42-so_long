@@ -27,7 +27,7 @@ This project is a very small 2D game. Its purpose is to make you work with textu
 $ git clone git@github.com:jppcarvalho94/42-so_long.git
 ```
 
-### Step 2 / Install Minilibx and it's dependencies:
+### Step 2 / Install Minilibx and its dependencies:
 Minilibx download:
 ```bash
 $ cd 42-so_long/
@@ -85,7 +85,7 @@ Map example:
   <img src="https://i.imgur.com/wPFCswz.gif" alt="SO_LONG_GIF">
 </div>
 
-To run the program, you need to select a map from the existing ones or the one that you've created. For that, you need to put the it's filename, extension and directory.  
+To run the program, you need to select a map from the existing ones or the one that you've created. For that, you need to put its filename, extension and directory.  
   
 For *mandatory*:
 ```bash
@@ -99,7 +99,7 @@ $ ./so_long_bonus maps/map1.ber
 To exit the game, just press 'ESC' on your keyboard or click the 'X' in the game window. **HAVE FUN!**
 
 ## Disclaimer:
-This project's source code adheres to the standards of 42 School and it's norms rigorous coding practices:
+This project's source code adheres to the standards of 42 School and its norms rigorous coding practices:
 ```
 - We refrain from using 'for,' 'do while,' 'switch,' 'case,' or 'goto' constructs.
 - Each function has no more than 25 lines of code. 
