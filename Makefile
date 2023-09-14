@@ -6,7 +6,7 @@
 #    By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/13 15:07:56 by joao-ppe          #+#    #+#              #
-#    Updated: 2023/09/05 11:56:29 by joao-ppe         ###   ########.fr        #
+#    Updated: 2023/09/14 15:15:59 by joao-ppe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,7 @@ fclean : clean
 	@$(RM) $(LIBFT) $(NAME) $(NAME_BNS)
 
 download:
-	@wget https://cdn.intra.42.fr/document/document/17753/minilibx-linux.tgz
+	@wget https://cdn.intra.42.fr/document/document/20776/minilibx-linux.tgz
 	@tar -xzf minilibx-linux.tgz -C libs
 	@rm minilibx-linux.tgz
 
