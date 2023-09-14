@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 14:49:08 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/22 18:11:46 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:13:24 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,7 +133,7 @@ int			move_enemy_down(t_game *game, int i);
 int			move_enemy_left(t_game *game, int i);
 int			move_enemy_right(t_game *game, int i);
 void		enemy_spawn_anim(t_game *game);
-void		loop_enemy_anim(t_game *game, char *anim_1, 
+void		loop_enemy_anim(t_game *game, char *anim_1,
 				char *anim_2, int e);
 // Endgame animations
 void		win_animation1(t_game *game);
