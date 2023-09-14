@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 18:18:37 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/18 19:59:25 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:05:50 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	render_window(t_game *game)
 			game->rows * SIZE, "so_long");
 	if (game->win_ptr == NULL)
 		return ;
-	game->img.mlx_img = mlx_new_image(game->mlx_ptr, game->columns * SIZE, 
+	game->img.mlx_img = mlx_new_image(game->mlx_ptr, game->columns * SIZE,
 			game->rows * SIZE);
-	game->img.addr = mlx_get_data_addr(game->img.mlx_img, &game->img.bpp, 
+	game->img.addr = mlx_get_data_addr(game->img.mlx_img, &game->img.bpp,
 			&game->img.line_len, &game->img.endian);
 }
 

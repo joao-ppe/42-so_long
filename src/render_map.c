@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 13:29:49 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/15 17:19:57 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:05:33 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	put_tile(t_game *game, char *tile, int x, int y)
 		mlx_destroy_image(game->mlx_ptr, game->img.mlx_img);
 		game->img.mlx_img = 0;
 	}
-	game->img.mlx_img = mlx_xpm_file_to_image(game->mlx_ptr, tile, 
+	game->img.mlx_img = mlx_xpm_file_to_image(game->mlx_ptr, tile,
 			&game->tile.x, &game->tile.y);
-	mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, 
+	mlx_put_image_to_window(game->mlx_ptr, game->win_ptr,
 		game->img.mlx_img, x, y);
 }
 

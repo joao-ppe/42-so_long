@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:50:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/15 17:01:12 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:06:07 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	validate_move_up(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y - 1][p_pos.x] == 'E' 
+	if ((game->map[p_pos.y - 1][p_pos.x] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y - 1][p_pos.x] == '1'))
 		return ;
@@ -47,7 +47,7 @@ void	validate_move_down(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y + 1][p_pos.x] == 'E' 
+	if ((game->map[p_pos.y + 1][p_pos.x] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y + 1][p_pos.x] == '1'))
 		return ;
@@ -62,7 +62,7 @@ void	validate_move_left(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y][p_pos.x - 1] == 'E' 
+	if ((game->map[p_pos.y][p_pos.x - 1] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y][p_pos.x - 1] == '1'))
 		return ;
@@ -77,7 +77,7 @@ void	validate_move_right(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y][p_pos.x + 1] == 'E' 
+	if ((game->map[p_pos.y][p_pos.x + 1] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y][p_pos.x + 1] == '1'))
 		return ;

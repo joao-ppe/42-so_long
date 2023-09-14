@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:50:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/05 16:54:25 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:08:14 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int	handle_keypress(int keysym, t_game *game)
 		validate_move_right(game);
 		move_enemy(game);
 	}
-	check_win(game);
 	check_loss(game, -1);
+	check_win(game);
 	return (0);
 }
 
@@ -46,7 +46,7 @@ void	validate_move_up(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y - 1][p_pos.x] == 'E' 
+	if ((game->map[p_pos.y - 1][p_pos.x] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y - 1][p_pos.x] == '1'))
 		return ;
@@ -67,7 +67,7 @@ void	validate_move_down(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y + 1][p_pos.x] == 'E' 
+	if ((game->map[p_pos.y + 1][p_pos.x] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y + 1][p_pos.x] == '1'))
 		return ;
@@ -88,7 +88,7 @@ void	validate_move_left(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y][p_pos.x - 1] == 'E' 
+	if ((game->map[p_pos.y][p_pos.x - 1] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y][p_pos.x - 1] == '1'))
 		return ;
@@ -109,7 +109,7 @@ void	validate_move_right(t_game *game)
 	t_point	p_pos;
 
 	p_pos = game->player;
-	if ((game->map[p_pos.y][p_pos.x + 1] == 'E' 
+	if ((game->map[p_pos.y][p_pos.x + 1] == 'E'
 		&& game->collected != game->collectibles)
 		|| (game->map[p_pos.y][p_pos.x + 1] == '1'))
 		return ;

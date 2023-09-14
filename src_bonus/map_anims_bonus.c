@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 16:47:58 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/22 18:31:40 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:07:26 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,14 +102,14 @@ void	death_animation1(t_game *game)
 	put_tile(game, "./assets/death_1.xpm", game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
 	put_tile(game, "./assets/death_2.xpm", game->player.x * SIZE, pos * SIZE);
-	loop_boost_anim(game, "./assets/death_3.xpm", 
+	loop_boost_anim(game, "./assets/death_3.xpm",
 		"./assets/death_4.xpm", 5);
 	usleep(80000);
 	put_tile(game, "./assets/death_4.xpm", game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
 	put_tile(game, "./assets/death_5.xpm", game->player.x * SIZE, pos * SIZE);
 	usleep(150000);
-	loop_boost_anim(game, "./assets/death_6.xpm", 
+	loop_boost_anim(game, "./assets/death_6.xpm",
 		"./assets/death_7.xpm", 5);
 	usleep(80000);
 	put_tile(game, "./assets/death_8.xpm", game->player.x * SIZE, pos * SIZE);
@@ -127,13 +127,13 @@ void	death_animation2(t_game *game)
 	put_tile(game, "./assets/death_10.xpm", game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
 	put_tile(game, "./assets/enemy.xpm", game->player.x * SIZE, pos * SIZE);
-	loop_boost_anim(game, "./assets/e_vanish_1.xpm", 
+	loop_boost_anim(game, "./assets/e_vanish_1.xpm",
 		"./assets/e_vanish_2.xpm", 3);
 	usleep(80000);
-	put_tile(game, "./assets/e_vanish_3.xpm", 
+	put_tile(game, "./assets/e_vanish_3.xpm",
 		game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
-	put_tile(game, "./assets/e_vanish_4.xpm", 
+	put_tile(game, "./assets/e_vanish_4.xpm",
 		game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
 	put_tile(game, "./assets/floor.xpm", game->player.x * SIZE, pos * SIZE);
