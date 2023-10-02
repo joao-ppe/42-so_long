@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:50:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/14 15:08:14 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/02 14:49:35 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	validate_move_up(t_game *game)
 		ft_printf("Moves: %d\n", game->moves);
 		render_moves(game);
 	}
+	check_loss(game, -1);
 }
 
 void	validate_move_down(t_game *game)
@@ -81,6 +82,7 @@ void	validate_move_down(t_game *game)
 		ft_printf("Moves: %d\n", game->moves);
 		render_moves(game);
 	}
+	check_loss(game, -1);
 }
 
 void	validate_move_left(t_game *game)
@@ -102,6 +104,7 @@ void	validate_move_left(t_game *game)
 		ft_printf("Moves: %d\n", game->moves);
 		render_moves(game);
 	}
+	check_loss(game, -1);
 }
 
 void	validate_move_right(t_game *game)
@@ -123,4 +126,5 @@ void	validate_move_right(t_game *game)
 		ft_printf("Moves: %d\n", game->moves);
 		render_moves(game);
 	}
+	check_loss(game, -1);
 }
