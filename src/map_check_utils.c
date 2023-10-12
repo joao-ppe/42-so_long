@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 16:38:06 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/10 15:20:10 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/12 15:41:16 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,25 @@ int	check_file_extension(char *filename)
 
 void	flood_fill(char **map, t_game *game, int x, int y)
 {
+	int	gathered;
+
+	gathered = 0;
 	if ((x < 0 || y < 0) || (x >= game->columns || y >= game->rows)
 		|| (map[y][x] == 'F' || map[y][x] == '1'))
 		return ;
-	if (map[y][x] == 'C' || map[y][x] == 'E' || map[y][x] == '0')
+	if (map[y][x] == 'E' || map[y][x] == '0')
 	{
 		map[y][x] = 'F';
 		if (map[y][x] == 'E')
 			return ;
 	}
+	if (map[y][x] == 'C')
+	{
+		map[y][x] = 'F';
+		gathered++;
+	}
+	if (gathered != game->collectibles)
+		return ;
 	flood_fill(map, game, x + 1, y);
 	flood_fill(map, game, x, y + 1);
 	flood_fill(map, game, x - 1, y);
