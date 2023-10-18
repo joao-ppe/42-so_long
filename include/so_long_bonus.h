@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 14:49:08 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/14 15:13:24 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/18 12:00:33 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct s_game
 	int		rows;
 	int		columns;
 	int		collectibles;
+	int		gathered;
 	int		collected;
 	int		moves;
 	int		level;

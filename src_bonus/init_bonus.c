@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 14:04:36 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/20 22:54:44 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/18 12:03:01 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void	init_game(t_game *game)
 	game->rows = 0;
 	game->columns = 0;
 	game->collectibles = 0;
+	game->gathered = 0;
 	game->collected = 0;
 	game->enemy_n = 0;
 	game->moves = 0;
