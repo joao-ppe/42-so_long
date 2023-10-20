@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 16:38:06 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/10/18 12:01:40 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/20 15:08:11 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,10 @@ void	flood_fill(char **map, t_game *game, int x, int y)
 		game->gathered++;
 	}
 	if (map[y][x] == 'E' && game->gathered != game->collectibles)
+	{
+		map[y][x] = 'F';
 		return ;
+	}
 	else
 		map[y][x] = 'F';
 	flood_fill(map, game, x + 1, y);

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_check_b.c                                      :+:      :+:    :+:   */
+/*   map_check_b_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/09 12:42:35 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/10 12:42:33 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/20 15:08:54 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	check_valid_path(t_game *game)
 	while (++game->coords.y < game->rows)
 		map[game->coords.y] = ft_strdup(game->map[game->coords.y]);
 	flood_fill(map, game, game->player.x, game->player.y);
-	game->coords.y = -1;
+	game->coords.y = 0;
 	while (++game->coords.y < game->rows)
 	{
 		game->coords.x = -1;
