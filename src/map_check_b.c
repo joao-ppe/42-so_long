@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/09 12:42:35 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/08/10 12:42:33 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/10/24 11:58:02 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	check_valid_path(t_game *game)
 			if (map[game->coords.y][game->coords.x] == 'C'
 				|| map[game->coords.y][game->coords.x] == 'E')
 			{
-				ft_printf("Error\nNo valid path found.");
+				ft_printf("Error\nNo valid path found.\n");
 				free_array(map, game->rows);
 				return (-1);
 			}
