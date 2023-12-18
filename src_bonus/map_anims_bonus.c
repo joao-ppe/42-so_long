@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 16:47:58 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/14 15:07:26 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/12/18 19:08:34 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ void	death_animation2(t_game *game)
 	put_tile(game, "./assets/death_10.xpm", game->player.x * SIZE, pos * SIZE);
 	usleep(80000);
 	put_tile(game, "./assets/enemy.xpm", game->player.x * SIZE, pos * SIZE);
-	loop_boost_anim(game, "./assets/e_vanish_1.xpm",
+	loop_enemy_anim(game, "./assets/e_vanish_1.xpm",
 		"./assets/e_vanish_2.xpm", 3);
 	usleep(80000);
 	put_tile(game, "./assets/e_vanish_3.xpm",

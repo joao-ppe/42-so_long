@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 17:18:37 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/09/14 15:06:55 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/12/18 19:07:40 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ void	enemy_spawn_anim(t_game *game)
 	{
 		loop_enemy_anim(game, "./assets/e_spawn_1.xpm",
 			"./assets/e_spawn_2.xpm", e);
-		usleep(50000);
+		usleep(15000);
 		put_tile(game, "./assets/e_spawn_3.xpm",
 			game->enemies[e].x * SIZE, game->enemies[e].y * SIZE);
-		usleep(50000);
+		usleep(15000);
 		put_tile(game, "./assets/enemy.xpm", game->enemies[e].x * SIZE,
 			game->enemies[e].y * SIZE);
 	}
@@ -60,9 +60,9 @@ void	loop_enemy_anim(t_game *game, char *anim_1, char *anim_2, int e)
 	{
 		put_tile(game, anim_1, game->enemies[e].x * SIZE,
 			game->enemies[e].y * SIZE);
-		usleep(25000);
+		usleep(15000);
 		put_tile(game, anim_2, game->enemies[e].x * SIZE,
 			game->enemies[e].y * SIZE);
-		usleep(25000);
+		usleep(15000);
 	}
 }
