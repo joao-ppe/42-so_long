@@ -24,7 +24,7 @@ This project is a very small 2D game. Its purpose is to make you work with textu
 ### Step 1 / Clone the repository:
 
 ```bash
-$ git clone git@github.com:jppcarvalho94/42-so_long.git
+$ git clone git@github.com:joao-ppe/42-so_long.git
 ```
 
 ### Step 2 / Install Minilibx and its dependencies:
